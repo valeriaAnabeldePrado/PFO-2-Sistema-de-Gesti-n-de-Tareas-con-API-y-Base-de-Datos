@@ -23,6 +23,6 @@ def login():
     conn.close()
 
     if user:
-        return render_template('tareas.html')  # redirige a tareas si login exitoso
+        return render_template('tasks.html')  
     else:
         return "❌ Usuario o contraseña inválidos", 401
